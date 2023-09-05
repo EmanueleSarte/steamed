@@ -7,9 +7,10 @@ name = "steamed"
 authors = [
     {name = "Emanuele Sarte"},
 ]
-version = "0.1.0"
+version = "0.1.2"
 description = "A wrapper around Steam official and unofficial APIs"
 requires-python = ">=3.8"
+readme = "README.md"
 keywords = ["steam"]
 license = {text = "MIT"}
 dependencies = [
@@ -17,3 +18,7 @@ dependencies = [
     "rsa",
     "beautifulsoup4"
 ]
+
+[project.urls]
+"Homepage" = "https://github.com/EmanueleSarte/steamed"
+"Bug Tracker" = "https://github.com/EmanueleSarte/steamed/issues"

@@ -1,10 +1,10 @@
 import json
 from typing import List, Union
 
-from steampye import guard
-from steampye.confirmation import ConfirmationExecutor
-from steampye.constants import COMMUNITY_URL, STORE_URL
-from steampye.utils import extract_json, get_token_from_trade_offer_url, \
+from . import guard
+from .confirmation import ConfirmationExecutor
+from .constants import COMMUNITY_URL
+from .utils import extract_json, get_token_from_trade_offer_url, \
     get_partner_from_trade_offer_url, account_id_to_steam_id, steam_id_to_account_id, texts_between
 from .market import Market, BasicMarket
 from .models import TradeOffersBox, TradeOffer, TradeReceipt, Inventory, Game, BasicAsset

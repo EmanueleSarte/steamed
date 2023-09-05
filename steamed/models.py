@@ -1,7 +1,7 @@
 from datetime import datetime
 from typing import List, Any
 
-import steampye.utils as utils
+from . import utils
 
 
 class Game:
@@ -404,7 +404,7 @@ class UserBuyOrder(BaseModel):
         self.quantity_remaining = None  # type: int
         self.price = None  # type: int
         self.item_name = None  # type: str
-        # todo check if other fields can be added
+        # todo check if test fields can be added
 
     @staticmethod
     def create(json_dict: dict) -> "UserBuyOrder":
@@ -610,7 +610,7 @@ class UserHistoryListingBox(BaseModel, list):
         #     if field not in json_dict["events"]:
         #         return False
 
-        # Let's assume the other hundreds fields are all right
+        # Let's assume the test hundreds fields are all right
         return True
 
 

@@ -3,7 +3,7 @@ from typing import Union, Tuple, Dict
 
 import requests
 
-from steampye.exceptions import TooManyRequests, SteamServerError
+from .exceptions import TooManyRequests, SteamServerError
 
 
 def text_between(text: str, begin: str, end: str) -> str:

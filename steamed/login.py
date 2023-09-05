@@ -3,7 +3,7 @@ import time
 import requests
 import rsa
 
-from steampye import guard
+from . import guard
 from .exceptions import InvalidCredentials, CaptchaRequired
 from .constants import COMMUNITY_URL, STORE_URL
 
